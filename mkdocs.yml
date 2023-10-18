@@ -1,4 +1,11 @@
 site_name: MKDocs NFL Deep Learning
+site_author: Manuel Rinaldi
+site_description: This site is a collection of notebooks and articles about Deep Learning applied to NFL data.
+site_url: https://mrinaldi2.github.io/nfl-deep-learning/
+nav:
+  - Home: index.md
+  - Test: page.md
+  - Notebook: notebook.ipynb
 theme:
   name: material
   features:
@@ -57,3 +64,7 @@ copyright: |
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - mkdocs-jupyter:
+      execute: false
