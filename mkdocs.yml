@@ -40,11 +40,20 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 copyright: |
   &copy; 2021 NFL Deep Learning <a href="https://github.com/mrinaldi2" target="_blank" rel="noopener">Manuel Rinaldi</a>
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
