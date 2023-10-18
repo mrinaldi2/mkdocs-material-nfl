@@ -1,0 +1,50 @@
+site_name: MKDocs NFL Deep Learning
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        name: Switch to dark mode
+        icon: material/toggle-switch-off-outline
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        name: Switch to light mode
+        icon: material/toggle-switch-outline
+
+extra:
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/mrinaldi2"
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+copyright: |
+  &copy; 2021 NFL Deep Learning <a href="https://github.com/mrinaldi2" target="_blank" rel="noopener">Manuel Rinaldi</a>
